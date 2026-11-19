@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AEROGATE | Terminal 3 Bay Operations Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Aviation Navigation Bar -->
+  <header>
+    <div class="brand">
+      <div class="brand-icon">&#9992;</div>
+      <div>
+        <div class="brand-title">
+          AEROGATE <span class="terminal-pill">TERMINAL 3</span>
+        </div>
+        <div class="brand-sub">Gateway &amp; Bay Operations Portal</div>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Live Gates</a></li>
+        <li><a href="departures.html">Flight Board</a></li>
+        <li><a href="assign.html">Assign Gate</a></li>
+        <li><a href="confirmation.html">Terminal Zones</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Top Section: Live Gate Status Overview -->
+    <div class="section-bar">
+      <h2 class="section-title">Live Gate Status Overview</h2>
+      <span class="section-hint">Click any gate bay to inspect aircraft telemetry</span>
+    </div>
+
+    <section class="gate-grid">
+      <!-- Gate A1 -->
+      <a href="#telemetry-a1" class="gate-card">
+        <div class="gate-header">
+          <span class="gate-name">GATE A1</span>
+          <span class="pill pill-green">Boarding</span>
+        </div>
+        <div class="flight-info">AI-302 &bull; Air India</div>
+        <div class="route-info">DEL (New Delhi) &rarr; LHR (London)</div>
+        <div class="gate-footer">
+          <div>
+            <span class="meta-label">Aircraft</span>
+            <span class="meta-value">Boeing 787-8</span>
+          </div>
+          <div style="text-align: right;">
+            <span class="meta-label">Departure</span>
+            <span class="meta-value">21:45 IST</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Gate A2 -->
+      <a href="#telemetry-a2" class="gate-card">
+        <div class="gate-header">
+          <span class="gate-name">GATE A2</span>
+          <span class="pill pill-amber">Delayed</span>
+        </div>
+        <div class="flight-info">EK-511 &bull; Emirates</div>
+        <div class="route-info">DEL (New Delhi) &rarr; DXB (Dubai)</div>
+        <div class="gate-footer">
+          <div>
+            <span class="meta-label">Aircraft</span>
+            <span class="meta-value">Airbus A380</span>
+          </div>
+          <div style="text-align: right;">
+            <span class="meta-label">New Time</span>
+            <span class="meta-value">22:30 IST</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Gate B4 -->
+      <a href="assign.html" class="gate-card">
+        <div class="gate-header">
+          <span class="gate-name">GATE B4</span>
+          <span class="pill pill-blue">Available</span>
+        </div>
+        <div class="flight-info">Ready for Docking</div>
+        <div class="route-info">Ground Crew &amp; Jetbridge Cleared</div>
+        <div class="gate-footer">
+          <div>
+            <span class="meta-label">Max Class</span>
+            <span class="meta-value">Code E (Wide)</span>
+          </div>
+          <div style="text-align: right;">
+            <span class="meta-label">Next Slot</span>
+            <span class="meta-value">23:00 IST</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Gate C1 -->
+      <a href="#telemetry-c1" class="gate-card active-highlight">
+        <div class="gate-header">
+          <span class="gate-name">GATE C1</span>
+          <span class="pill pill-red">Gate Closed</span>
+        </div>
+        <div class="flight-info">6E-1404 &bull; IndiGo</div>
+        <div class="route-info">DEL (New Delhi) &rarr; SIN (Singapore)</div>
+        <div class="gate-footer">
+          <div>
+            <span class="meta-label">Aircraft</span>
+            <span class="meta-value">Airbus A321neo</span>
+          </div>
+          <div style="text-align: right;">
+            <span class="meta-label">Pushback</span>
+            <span class="meta-value">In Progress</span>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Bottom Split Section: Table + Manual Re-Assignment -->
+    <section class="bottom-split">
+      <!-- Left: Departure Gate Allocation Table -->
+      <div class="panel-box">
+        <div class="panel-header">
+          <h3 class="section-title">Departure Gate Allocation Table</h3>
+          <span class="section-hint">Real-time bay assignments &amp; passenger load</span>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>FLIGHT</th>
+                <th>DESTINATION</th>
+                <th>GATE</th>
+                <th>PAX LOAD</th>
+                <th>STATUS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>LH-761</strong></td>
+                <td>Frankfurt (FRA)</td>
+                <td><span class="gate-tag">A4</span></td>
+                <td>284/290</td>
+                <td><span class="dot dot-green"></span>On Time</td>
+              </tr>
+              <tr>
+                <td><strong>QR-579</strong></td>
+                <td>Doha (DOH)</td>
+                <td><span class="gate-tag">B1</span></td>
+                <td>310/335</td>
+                <td><span class="dot dot-cyan"></span>Boarding</td>
+              </tr>
+              <tr>
+                <td><strong>BA-256</strong></td>
+                <td>London (LHR)</td>
+                <td><span class="gate-tag">A2</span></td>
+                <td>245/260</td>
+                <td><span class="dot dot-amber"></span>Security Check</td>
+              </tr>
+              <tr>
+                <td><strong>SQ-403</strong></td>
+                <td>Singapore (SIN)</td>
+                <td><span class="gate-tag">C3</span></td>
+                <td>298/300</td>
+                <td><span class="dot dot-red"></span>Final Call</td>
+              </tr>
+              <tr>
+                <td><strong>UK-115</strong></td>
+                <td>Bangkok (BKK)</td>
+                <td><span class="gate-tag">B2</span></td>
+                <td>172/180</td>
+                <td><span class="dot dot-cyan"></span>Scheduled</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Right: Manual Gate Re-Assignment Form -->
+      <div class="panel-box">
+        <div class="panel-header">
+          <h3 class="section-title">Manual Gate Re-Assignment</h3>
+          <span class="section-hint">Dispatch override for incoming flights</span>
+        </div>
+
+        <form action="confirmation.html" method="get">
+          <div class="form-group">
+            <label for="flightNum">Flight Number</label>
+            <input type="text" id="flightNum" class="form-control" placeholder="e.g., AI-101" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="wing">Terminal Wing</label>
+              <select id="wing" class="form-control">
+                <option>Pier A (International)</option>
+                <option>Pier B (International)</option>
+                <option>Pier C (Domestic)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="targetGate">Target Gate</label>
+              <select id="targetGate" class="form-control">
+                <option>Gate B4 (Open)</option>
+                <option>Gate A5 (Open)</option>
+                <option>Gate C2 (Open)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Priority Handling Flags</label>
+            <div class="flag-group">
+              <label class="flag-option">
+                <input type="checkbox" checked>
+                <span>Dual Jetbridge</span>
+              </label>
+              <label class="flag-option">
+                <input type="checkbox">
+                <span>VIP Protocol</span>
+              </label>
+              <label class="flag-option">
+                <input type="checkbox">
+                <span>Refuel Priority</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary">Confirm Gate Re-Assignment</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Pure-CSS Telemetry Modals when clicking Gate Cards -->
+    <div id="telemetry-a1" class="modal">
+      <div class="modal-card">
+        <h3>GATE A1 &bull; Aircraft Telemetry</h3>
+        <p><strong>Flight:</strong> AI-302 (Air India)</p>
+        <p><strong>Aircraft:</strong> Boeing 787-8 Dreamliner</p>
+        <p><strong>Fuel Load:</strong> 68,400 kg (Complete)</p>
+        <p><strong>Jetbridge 1 &amp; 2:</strong> Connected &amp; Active</p>
+        <p><strong>Boarding Progress:</strong> 238 / 256 Passengers</p>
+        <a href="#" class="btn-close">Close Telemetry</a>
+      </div>
+    </div>
+
+    <div id="telemetry-a2" class="modal">
+      <div class="modal-card">
+        <h3>GATE A2 &bull; Aircraft Telemetry</h3>
+        <p><strong>Flight:</strong> EK-511 (Emirates)</p>
+        <p><strong>Aircraft:</strong> Airbus A380-800</p>
+        <p><strong>Delay Reason:</strong> Late Inbound Airspace Congestion</p>
+        <p><strong>Revised Departure:</strong> 22:30 IST</p>
+        <a href="#" class="btn-close">Close Telemetry</a>
+      </div>
+    </div>
+
+    

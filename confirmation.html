@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terminal Zones &amp; Updated Schedule | AEROGATE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Matching Dark Aviation Navigation Bar -->
+  <header>
+    <div class="brand">
+      <div class="brand-icon">&#9992;</div>
+      <div>
+        <div class="brand-title">
+          AEROGATE <span class="terminal-pill">TERMINAL 3</span>
+        </div>
+        <div class="brand-sub">Gateway &amp; Bay Operations Portal</div>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Live Gates</a></li>
+        <li><a href="departures.html">Flight Board</a></li>
+        <li><a href="assign.html">Assign Gate</a></li>
+        <li><a href="confirmation.html" class="active">Terminal Zones</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Glowing Green Confirmation Banner -->
+    <div style="background: rgba(16, 185, 129, 0.14); border: 1px solid rgba(52, 211, 153, 0.4); color: #34d399; padding: 1.1rem 1.4rem; border-radius: 12px; margin-bottom: 1.75rem; font-weight: 600; display: flex; align-items: center; gap: 0.75rem;">
+      <span style="font-size: 1.3rem;">&#10004;</span>
+      <span>Success! New flight has been allocated to the selected gate and synced with the Passenger Departures Board.</span>
+    </div>
+
+    <!-- Section Header + Styled Back Button -->
+    <div class="section-bar" style="margin-bottom: 1.5rem;">
+      <div>
+        <h1 class="section-title" style="font-size: 1.45rem;">Updated Gate Allocation Schedule</h1>
+        <p class="section-hint" style="margin-top: 0.3rem; padding-left: 1.15rem;">Live Terminal 3 Pier A, B &amp; C Bay Assignments</p>
+      </div>
+      <a href="index.html" style="background: rgba(14, 165, 233, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); padding: 0.65rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 600;">&larr; Back to Live Gates</a>
+    </div>
+
+    <!-- Dark Aviation Schedule Table -->
+    <div class="panel-box">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>GATE</th>
+              <th>FLIGHT</th>
+              <th>AIRLINE</th>
+              <th>DESTINATION</th>
+              <th>DEPARTURE</th>
+              <th>STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="gate-tag">Gate A1</span></td>
+              <td><strong>AI-204</strong></td>
+              <td>Air India</td>
+              <td>New Delhi (DEL)</td>
+              <td>14:30 IST</td>
+              <td><span class="pill pill-amber">Occupied</span></td>
+            </tr>
+            <!-- Highlighted Newly Assigned Row -->
+            <tr style="background: rgba(16, 185, 129, 0.08);">
+              <td><span class="gate-tag">Gate A2 (New)</span></td>
+              <td><strong>UK-814</strong></td>
+              <td>Air India</td>
+              <td>Bengaluru (BLR)</td>
+              <td>15:45 IST</td>
+              <td><span class="pill pill-green">Newly Assigned</span></td>
+            </tr>
+            <tr>
+              <td><span class="gate-tag">Gate A3</span></td>
+              <td style="color: #83ade8;">&mdash;</td>
+              <td style="color: #6296df;">&mdash;</td>
+              <td style="color: #94a3b8;">&mdash;</td>
+              <td style="color: #94a3b8;">&mdash;</td>
+              <td><span class="pill pill-blue">Available</span></td>
+            </tr>
+            <tr>
+              <td><span class="gate-tag">Gate B1</span></td>
+              <td><strong>6E-512</strong></td>
+              <td>IndiGo</td>
+              <td>Mumbai (BOM)</td>
+              <td>15:10 IST</td>
+              <td><span class="pill pill-amber">Occupied</span></td>
+            </tr>
+            <tr>
+              <td><span class="gate-tag">Gate C1</span></td>
+              <td><strong>6E-1404</strong></td>
+              <td>IndiGo</td>
+              <td>Singapore (SIN)</td>
+              <td>21:55 IST</td>
+              <td><span class="pill pill-red">Gate Closed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    AEROGATE Terminal 3 Operations Control &bull; Built with Semantic HTML5 &amp; CSS3
+  </footer>
+
+</body>
+</html>
+

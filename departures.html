@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gate Assigned | AeroGate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Aero<span>Gate</span> Control</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Gate Dashboard</a></li>
+        <li><a href="assign.html">Assign Gate</a></li>
+        <li><a href="departures.html">Passenger Board</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="alert-success">
+      &#10004; Success! New flight has been allocated to the selected gate and synced with the Passenger Departures Board.
+    </div>
+
+    <div class="page-header">
+      <h1>Updated Gate Allocation Schedule</h1>
+      <a href="index.html" class="btn btn-outline">Back to Dashboard</a>
+    </div>
+
+    <div class="board-wrapper" style="background: #ffffff; color: #1e293b; box-shadow: 0 3px 10px rgba(0,0,0,0.06);">
+      <table class="flight-table">
+        <thead>
+          <tr style="background: #f8fafc;">
+            <th style="color: #0f172a;">Gate</th>
+            <th style="color: #0f172a;">Flight</th>
+            <th style="color: #0f172a;">Airline</th>
+            <th style="color: #0f172a;">Destination</th>
+            <th style="color: #0f172a;">Departure</th>
+            <th style="color: #0f172a;">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td><strong>Gate A1</strong></td>
+            <td>AI-204</td>
+            <td>Air India</td>
+            <td>New Delhi (DEL)</td>
+            <td>14:30 IST</td>
+            <td><span class="badge badge-occupied">Occupied</span></td>
+          </tr>
+          <tr style="background: #bbedca; border-bottom: 1px solid #e2e8f0;">
+            <td><strong>Gate A2 (New)</strong></td>
+            <td>UK-814</td>
+            <td>Air India</td>
+            <td>Bengaluru (BLR)</td>
+            <td>15:45 IST</td>
+            <td><span class="badge badge-occupied">Newly Assigned</span></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td><strong>Gate A3</strong></td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td><span class="badge badge-available">Available</span></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td><strong>Gate B1</strong></td>
+            <td>6E-512</td>
+            <td>IndiGo</td>
+            <td>Mumbai (BOM)</td>
+            <td>15:10 IST</td>
+            <td><span class="badge badge-occupied">Occupied</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Airport Gate Management System | Course Project</p>
+  </footer>
+
+</body>
+</html>
